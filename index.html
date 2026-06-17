@@ -501,88 +501,46 @@ footer span{color:var(--accent)}
 </section>
 
 <!-- ══ ABOUT ══ -->
-<div class="rv">
-
-  <div class="profile-card">
-
-    <!-- ✅ VIDEO -->
-    <video 
-      id="profile-vid"
-      class="profile-card-photo"
-      autoplay 
-      muted 
-      loop 
-      playsinline
-    >
-      <source src="veera_intro.mp4" type="video/mp4">
-    </video>
-
-    <!-- ✅ MUTE BUTTON -->
-    <button onclick="
-      const v=document.getElementById('profile-vid');
-      v.muted=!v.muted;
-      this.textContent=v.muted?'🔇 Unmute':'🔊 Mute';
-    "
-    style="
-      position:absolute;
-      bottom:16px;
-      right:16px;
-      z-index:10;
-      background:rgba(8,12,16,.85);
-      border:1px solid rgba(0,212,255,.4);
-      color:#00D4FF;
-      font-family:monospace;
-      font-size:10px;
-      padding:5px 12px;
-      border-radius:2px;
-      cursor:pointer;
-      letter-spacing:.1em;
-    ">
-      🔇 Unmute
-    </button>
-
-    <!-- ✅ OVERLAYS (these were broken before) -->
-    <div class="scan-lines"></div>
-
-    <div class="hud-overlay">
-      <div class="hud-badge">● Live Portfolio</div>
-      <div class="hud-rec">REC</div>
-    </div>
-
-    <div class="hud-metrics">
-      <div class="hud-metric">Uptime <span>99.9%</span></div>
-      <div class="hud-metric">Servers <span>750+</span></div>
-      <div class="hud-metric">Certs <span>6 ✓</span></div>
-    </div>
-
-    <div class="profile-card-bar">
-      <div class="profile-card-name">Veera Peta</div>
-      <div class="profile-card-role">
-        Sr. Systems Engineer · Linux SME
+<section id="about" class="sec">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="rv">
+        <!-- Profile "video" card — same pattern as Bhairav's video card -->
+        <div class="profile-card">
+          <video id="profile-vid" autoplay muted loop playsinline class="profile-card-photo">
+            <source src="veera_intro.mp4" type="video/mp4">
+         </video>
+         <button onclick="const v=document.getElementById('profile-vid');v.muted=!v.muted;this.textContent=v.muted?'🔇 Unmute':'🔊 Mute'" 
+           style="position:absolute;bottom:64px;right:16px;z-index:10;background:rgba(8,12,16,.85);border:1px solid rgba(0,212,255,.4);color:#00D4FF;font-family:monospace;font-size:10px;padding:5px 12px;border-radius:2px;cursor:pointer;letter-spacing:.1em">
+           🔇 Unmute
+         </button>
+          <div class="scan-lines"></div>
+          <div class="hud-overlay">
+            <div class="hud-badge">● Live Portfolio</div>
+            <div class="hud-rec">REC</div>
+          </div>
+          <div class="hud-metrics">
+            <div class="hud-metric">Uptime <span>99.9%</span></div>
+            <div class="hud-metric">Servers <span>750+</span></div>
+            <div class="hud-metric">Certs <span>6 ✓</span></div>
+          </div>
+          <div class="profile-card-bar">
+            <div class="profile-card-name">Veera Peta</div>
+            <div class="profile-card-role">Sr. Systems Engineer · Linux SME</div>
+          </div>
+        </div>
+        <!-- Intro speech card — represents the "talking video" intro -->
+        <div class="speech-card" style="margin-top:1.2rem">
+          <p class="speech-text">Hi, I'm Veera Peta — a Senior Systems Engineer specialising in Linux and platform engineering. I design and build resilient infrastructure, automate complex systems, and enable scalable, production-ready environments. Welcome to my portfolio.</p>
+          <div class="speech-attr">— Veera Peta · Randburg, South Africa</div>
+        </div>
+        <div style="margin-top:1.2rem;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.15);border-radius:3px;padding:.9rem 1.2rem;display:flex;align-items:center;gap:.8rem">
+          <span style="font-size:18px">🏆</span>
+          <span style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase">EX280 · CKA · RHCE · AWS-SAA · SL1 Expert</span>
+        </div>
       </div>
-    </div>
-
-  </div>
-
-  <!-- ✅ SPEECH BOX (leave as is) -->
-  <div class="speech-card" style="margin-top:1.2rem">
-    <p class="speech-text">
-      Hi, I'm Veera Peta — a Senior Systems Engineer specialising in Linux and platform engineering. I design and build resilient infrastructure, automate complex systems, and enable scalable, production-ready environments. Welcome to my portfolio.
-    </p>
-    <div class="speech-attr">— Veera Peta · Randburg, South Africa</div>
-  </div>
-
-  <div style="margin-top:1.2rem;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.15);border-radius:3px;padding:.9rem 1.2rem;display:flex;align-items:center;gap:.8rem">
-    <span style="font-size:18px">🏆</span>
-    <span style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase">
-      EX280 · CKA · RHCE · AWS-SAA · SL1 Expert
-    </span>
-  </div>
-
-</div>
-``
-
-      <div class="rv" style="padding-top:1rem">
+  
+  <div class="rv" style="padding-top:1rem">
         <span class="sec-tag">About Me</span>
         <h2 class="about-h2">Infrastructure that <span>never breaks</span></h2>
         <p class="about-p">I'm a Senior SRE and Linux SME with over a decade of experience keeping enterprise infrastructure running at scale. Currently at <strong style="color:var(--text)">Altron Systems Integration</strong>, where I manage the hybrid Linux estate for MultiChoice — one of Africa's largest broadcasting companies.</p>
