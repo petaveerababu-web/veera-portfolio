@@ -506,10 +506,12 @@ footer span{color:var(--accent)}
     <div class="about-grid">
       <div class="rv">
         <!-- Profile "video" card — same pattern as Bhairav's video card -->
-        <div class="profile-card">
-          <video id="profile-vid" autoplay muted loop playsinline class="profile-card-photo">
-            <source src="veera_intro.mp4" type="video/mp4">
-         </video>
+        <div class="profile-card">   
+         <img 
+           src="https://raw.githubusercontent.com/petaveerababu-web/veera-portfolio/main/veera_pic.png"
+           class="profile-card-photo"
+           alt="Veera Peta"
+         />
          <button onclick="const v=document.getElementById('profile-vid');v.muted=!v.muted;this.textContent=v.muted?'🔇 Unmute':'🔊 Mute'" 
            style="position:absolute;bottom:64px;right:16px;z-index:10;background:rgba(8,12,16,.85);border:1px solid rgba(0,212,255,.4);color:#00D4FF;font-family:monospace;font-size:10px;padding:5px 12px;border-radius:2px;cursor:pointer;letter-spacing:.1em">
            🔇 Unmute
