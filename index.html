@@ -506,14 +506,50 @@ footer span{color:var(--accent)}
     <div class="about-grid">
       <div class="rv">
         <!-- Profile "video" card — same pattern as Bhairav's video card -->
-        <div class="profile-card">
-          <video id="profile-vid" autoplay muted loop playsinline class="profile-card-photo">
-            <source src="c:\Users\Veera.Peta\Downloads\veera_intro.mp4.mp4" type="video/mp4">
-         </video>
-         <button onclick="const v=document.getElementById('profile-vid');v.muted=!v.muted;this.textContent=v.muted?'🔇 Unmute':'🔊 Mute'" 
-           style="position:absolute;bottom:64px;right:16px;z-index:10;background:rgba(8,12,16,.85);border:1px solid rgba(0,212,255,.4);color:#00D4FF;font-family:monospace;font-size:10px;padding:5px 12px;border-radius:2px;cursor:pointer;letter-spacing:.1em">
-           🔇 Unmute
-         </button>
+        <div class="profile-card" style="position:relative;">
+
+  <iframe
+    class="profile-card-photo"
+    src="https://www.youtube.com/embed/_j9UPBSO6bY?autoplay=1&mute=1&loop=1&playlist=_j9UPBSO6bY&controls=0&modestbranding=1"
+    title="Veera Intro Video"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    style="width:100%; height:100%; object-fit:cover;"
+  >
+  </iframe>
+
+  <button onclick="
+    const iframe = document.querySelector('#about iframe');
+    const src = iframe.src;
+
+    if (src.includes('mute=1')) {
+      iframe.src = src.replace('mute=1', 'mute=0');
+      this.textContent = '🔊 Mute';
+    } else {
+      iframe.src = src.replace('mute=0', 'mute=1');
+      this.textContent = '🔇 Unmute';
+    }
+  " 
+  style="
+    position:absolute;
+    bottom:16px;
+    right:16px;
+    z-index:10;
+    background:rgba(8,12,16,.85);
+    border:1px solid rgba(0,212,255,.4);
+    color:#00D4FF;
+    font-family:monospace;
+    font-size:10px;
+    padding:5px 12px;
+    border-radius:2px;
+    cursor:pointer;
+    letter-spacing:.1em;
+  ">
+    🔇 Unmute
+  </button>
+
+</div>
           <div class="scan-lines"></div>
           <div class="hud-overlay">
             <div class="hud-badge">● Live Portfolio</div>
