@@ -488,7 +488,7 @@ footer span{color:var(--accent)}
           <div style="margin-top:6px"><span class="t-prompt">veera@sre:~$</span> <span class="t-cmd">ansible all -m ping</span></div>
           <div><span class="t-out">750 servers |</span> <span class="t-pass">SUCCESS</span></div>
           <div style="margin-top:6px"><span class="t-prompt">veera@sre:~$</span> <span class="t-cmd">uptime_check --all</span></div>
-          <div><span class="t-pass">✓ 99.9% SLA maintained</span></div>
+           <div><span class="t-pass">✓ 99.9% SLA maintained</span></div>
           <div style="margin-top:6px"><span class="t-prompt">veera@sre:~$</span> <span class="cursor"></span></div>
         </div>
       </div>
@@ -506,12 +506,19 @@ footer span{color:var(--accent)}
     <div class="about-grid">
       <div class="rv">
         <!-- Profile "video" card — same pattern as Bhairav's video card -->
+<<<<<<< HEAD
         <div class="profile-card">   
          <img 
            src="https://raw.githubusercontent.com/petaveerababu-web/veera-portfolio/main/veera_pic.png"
            class="profile-card-photo"
            alt="Veera Peta"
          />
+=======
+        <div class="profile-card">
+          <video id="profile-vid" autoplay muted loop playsinline class="profile-card-photo">
+            <source src="c:\Users\Veera.Peta\Downloads\veera_intro.mp4.mp4" type="video/mp4">
+         </video>
+>>>>>>> 49a7d96 (Added Microsoft Azure Administrator and DevOps Engineer certifications)
          <button onclick="const v=document.getElementById('profile-vid');v.muted=!v.muted;this.textContent=v.muted?'🔇 Unmute':'🔊 Mute'" 
            style="position:absolute;bottom:64px;right:16px;z-index:10;background:rgba(8,12,16,.85);border:1px solid rgba(0,212,255,.4);color:#00D4FF;font-family:monospace;font-size:10px;padding:5px 12px;border-radius:2px;cursor:pointer;letter-spacing:.1em">
            🔇 Unmute
@@ -541,8 +548,8 @@ footer span{color:var(--accent)}
           <span style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase">EX280 · CKA · RHCE · AWS-SAA · SL1 Expert</span>
         </div>
       </div>
-  
-  <div class="rv" style="padding-top:1rem">
+
+      <div class="rv" style="padding-top:1rem">
         <span class="sec-tag">About Me</span>
         <h2 class="about-h2">Infrastructure that <span>never breaks</span></h2>
         <p class="about-p">I'm a Senior SRE and Linux SME with over a decade of experience keeping enterprise infrastructure running at scale. Currently at <strong style="color:var(--text)">Altron Systems Integration</strong>, where I manage the hybrid Linux estate for MultiChoice — one of Africa's largest broadcasting companies.</p>
@@ -575,122 +582,28 @@ footer span{color:var(--accent)}
         <div class="tl-right">
           <div class="tl-role">Senior Systems Engineer / Linux SME</div>
           <div class="tl-desc">
-<style>
-  .section {
-    margin-bottom: 28px;
-  }
-
-  .section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 6px;
-  }
-
-  .section h3 {
-    font-size: 16px;
-    margin: 18px 0 8px;
-    color: #4fc3f7;
-  }
-
-  .section p {
-    line-height: 1.6;
-    margin: 0 0 10px;
-  }
-
-  .section ul {
-    margin: 8px 0 16px 20px;
-    padding: 0;
-  }
-
-  .section li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
-
-  .highlight {
-    color: #81d4fa;
-    font-weight: 500;
-  }
-</style>
-
-<div class="section">
-
-  <h2>Senior Systems Engineer / Linux SME</h2>
-
-  <h3>Role Scope</h3>
   <p>
-    Lead Linux SME responsible for 
-    <span class="highlight">enterprise-scale infrastructure (750+ servers)</span> 
-    supporting mission-critical broadcast and digital platforms across hybrid environments.
+    <strong>Lead Linux SME</strong> managing a hybrid estate of <strong>750+ on-premises and AWS Linux servers</strong> for MultiChoice, Africa's largest broadcast platform, consistently achieving <strong>99.9% uptime</strong> across mission-critical production systems.
   </p>
 
-  <h3>Key Achievements &amp; Impact</h3>
   <ul>
-    <li>Maintained <span class="highlight">99.9% uptime</span> across highly critical production systems under strict SLA requirements.</li>
-    <li>Served as the <span class="highlight">primary escalation point and technical authority</span> for all Linux-related issues.</li>
-    <li>Drove evolution toward <span class="highlight">modern platform engineering and container-based architectures</span>.</li>
-  </ul>
-
-  <h3>Core Responsibilities</h3>
-  <ul>
-    <li>Managed <span class="highlight">750+ enterprise Linux servers</span> across hybrid environments ensuring high availability and performance.</li>
-
-    <li>Acted as <span class="highlight">primary Linux SME</span>, handling deep production troubleshooting and root cause analysis.</li>
-
-    <li>Developed <span class="highlight">automation frameworks (Ansible, Bash, Python)</span> to standardize infrastructure and reduce operational overhead.</li>
-
-    <li>Supported <span class="highlight">API-driven and microservices-based platforms</span> for high-performance production workloads.</li>
-  </ul>
-
-  <h3>Container Platform &amp; Cloud</h3>
-  <ul>
-    <li>Operated <span class="highlight">OpenShift clusters</span> across dev, QA, and production environments.</li>
-
-    <li>Supported <span class="highlight">Azure Kubernetes Service (AKS)</span> for scalable cloud-native applications.</li>
-
-    <li>Managed <span class="highlight">220+ running pods</span> ensuring system performance and stability.</li>
-
-    <li>Troubleshot <span class="highlight">pod, node, networking, and deployment issues</span> in production.</li>
-
-    <li>Collaborated with DevOps teams on <span class="highlight">microservices and API platforms</span>.</li>
-  </ul>
-
-  <h3>Performance &amp; Reliability</h3>
-  <ul>
-    <li>Executed <span class="highlight">performance tuning and capacity planning</span> across VM and container workloads.</li>
-
-    <li>Owned <span class="highlight">incident management lifecycle</span> including RCA and long-term improvements.</li>
-
-    <li>Managed <span class="highlight">patching and lifecycle strategies</span> with minimal downtime.</li>
-  </ul>
-
-  <h3>Monitoring &amp; Cloud Integration</h3>
-  <ul>
-    <li>Implemented <span class="highlight">monitoring and observability solutions</span> for infrastructure and applications.</li>
-
-    <li>Supported hybrid cloud integrations with 
-      <span class="highlight">Azure (AKS, networking, identity)</span> and AWS.
-    </li>
-
-    <li>Enabled <span class="highlight">AI/ML workloads (GPU, CUDA, Ollama)</span> for advanced compute use cases.</li>
-  </ul>
-
-  <h3>Collaboration &amp; Engineering Excellence</h3>
-  <ul>
-    <li>Worked closely with engineering teams to support <span class="highlight">CI/CD-driven deployments</span>.</li>
-
-    <li>Drove improvements in:
-      <ul>
-        <li>Containerization and Kubernetes adoption</li>
-        <li>Platform reliability and scalability</li>
-        <li>Automation-first infrastructure operations</li>
-      </ul>
-    </li>
-  </ul>
-
-</div>
-
+    <li>Led administration and support of 600+ enterprise Linux servers across hybrid environments</li>
+    
+    <li>Acted as Linux Subject Matter Expert (SME), providing advanced troubleshooting and technical guidance for critical production systems</li>
+    
+    <li>Drove automation initiatives using <strong>Ansible</strong>, <strong>Bash</strong>, and <strong>Python</strong> to improve operational efficiency and standardisation</li>
+    
+    <li>Performed system performance tuning, capacity planning, and proactive monitoring to optimise resource utilisation</li>
+    
+    <li>Managed incident response, root cause analysis (RCA), and problem resolution in high-pressure environments</li>
+    
+    <li>Owned patching, upgrades, and lifecycle management, ensuring security compliance with minimal downtime</li>
+    
+    <li>Implemented and enhanced monitoring and observability solutions, reducing incident response times</li>
+    
+    <li>Supported AI-driven infrastructure (GPU, CUDA, Ollama) for internal innovation and engineering use cases</li>
+    
+    <li>Collaborated with DevOps, cloud, and application teams to align infrastructure with platform engineering best practices</li>
           </div>
               <div class="tl-tags">
             <span class="tl-tag hl">RHEL 9.6</span><span class="tl-tag hl">OpenShift</span><span class="tl-tag hl">Ansible</span>
@@ -904,6 +817,18 @@ footer span{color:var(--accent)}
         <div class="cert-year">Active</div>
         <div class="cert-name">Solutions Architect — Associate</div>
         <div class="cert-num">AWS-SAA · credly.com/badges/21569703</div>
+      </div>
+      <div class="cert-card microsoft">
+        <div class="cert-logo microsoft">MICROSOFT</div>
+        <div class="cert-year">Active</div>
+        <div class="cert-name">Azure Administrator Associate</div>
+        <div class="cert-num">Credential ID: 12072F8FC52E1AC3</div>
+      </div>
+      <div class="cert-card microsoft">
+        <div class="cert-logo microsoft">MICROSOFT</div>
+        <div class="cert-year">Active</div>
+        <div class="cert-name">DevOps Engineer Expert</div>
+        <div class="cert-num">Credential ID: 551C32CC4F0F3CFF</div>
       </div>
       <div class="cert-card rhce">
         <div class="cert-logo rh">RED HAT</div>
